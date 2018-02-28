@@ -96,5 +96,8 @@
   ],
   "jest": {
     "testRegex": "(/__tests__/.*\\.js)$"
+  },
+  "dependencies": {
+    "throttleit": "1.0.0"
   }
 }

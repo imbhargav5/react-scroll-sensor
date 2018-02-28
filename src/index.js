@@ -1,9 +1,14 @@
 // eslint-disable-next-line
 import React from "react";
 import PropTypes from "prop-types";
+import throttle from "throttleit";
 
 export default class ScrollSensor extends React.Component {
+  static defaultProps = {
+    throttleDelay: 300
+  };
   static propTypes = {
+    throttleDelay: PropTypes.number,
     children: PropTypes.func.isRequired
   };
   constructor(props) {
@@ -13,8 +18,15 @@ export default class ScrollSensor extends React.Component {
       scrollX: 0,
       scrollY: 0
     };
+    this.handleScroll =
+      this.props.throttleDelay > 100
+        ? throttle(
+            this.updateScrollPosition.bind(this),
+            this.props.throttleDelay
+          )
+        : this.updateScrollPosition.bind(this);
   }
-  handleScroll = e => {
+  updateScrollPosition = e => {
     if (e.isTrusted) {
       this.setState({
         scrollY: window.scrollY,
