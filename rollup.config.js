@@ -12,7 +12,7 @@ const config = {
 
 if (env === "es" || env === "cjs") {
   config.output = { format: env };
-  config.external = ["react", "prop-types"];
+  config.external = ["react", "prop-types", "throttleit"];
   config.plugins.push(
     babel({
       plugins: ["external-helpers"]
@@ -28,6 +28,7 @@ if (env === "development" || env === "production") {
       include: [
         "node_modules/react/**",
         "node_modules/prop-types/**",
+        "node_modules/throttleit/**",
         "node_modules/fbjs/**",
         "node_modules/object-assign/**"
       ]
