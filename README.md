@@ -7,6 +7,12 @@ Get the scroll positions of the window object in your component
 [![npm](https://img.shields.io/npm/dm/react-scroll-sensor.svg?style=for-the-badge)](https://www.npmjs.com/package/react-scroll-sensor)
 [![npm](https://img.shields.io/npm/l/react-scroll-sensor.svg?style=for-the-badge)](https://www.npmjs.com/package/react-scroll-sensor)
 
+<hr/>
+
+<img src="https://github.com/imbhargav5/react-scroll-sensor/blob/master/.github/react-scroll-sensor.gif?raw=true"/>
+
+<hr/>
+
 ## Usage
 
 You can use this to build a sticky div which moves around with the cursor.
