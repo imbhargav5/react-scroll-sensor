@@ -1,22 +1,24 @@
 {
   "name": "react-scroll-sensor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "lib/index.js",
   "module": "es/index.js",
   "watch": {
     "build": "{src,demo}/**/*.js"
   },
-  "files": ["dist", "lib", "es", "src"],
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "src"
+  ],
   "scripts": {
     "build:commonjs": "cross-env NODE_ENV=cjs rollup -c -o lib/index.js",
     "build:es": "cross-env BABEL_ENV=es NODE_ENV=es rollup -c -o es/index.js",
-    "build:umd":
-      "cross-env BABEL_ENV=es NODE_ENV=development rollup -c -o dist/react-scroll-sensor.js",
-    "build:umd:min":
-      "cross-env BABEL_ENV=es NODE_ENV=production rollup -c -o dist/react-scroll-sensor.min.js",
-    "build":
-      "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
+    "build:umd": "cross-env BABEL_ENV=es NODE_ENV=development rollup -c -o dist/react-scroll-sensor.js",
+    "build:umd:min": "cross-env BABEL_ENV=es NODE_ENV=production rollup -c -o dist/react-scroll-sensor.min.js",
+    "build": "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
     "clean": "rimraf lib dist es",
     "lint": "eslint {__tests__,src}/*.js",
     "watch": "npm-watch",
@@ -41,8 +43,7 @@
     "state-management",
     "finite-state-machine"
   ],
-  "author":
-    "Bhargav Ponnapalli <bhargavponnapalli.5@gmail.com> (https://github.com/imbhargav5)",
+  "author": "Bhargav Ponnapalli <bhargavponnapalli.5@gmail.com> (https://github.com/imbhargav5)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/imbhargav5/react-scroll-sensor/issues"
@@ -88,7 +89,9 @@
   "npmFileMap": [
     {
       "basePath": "/dist/",
-      "files": ["*.js"]
+      "files": [
+        "*.js"
+      ]
     }
   ],
   "jest": {
