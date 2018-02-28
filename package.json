@@ -1,5 +1,5 @@
 {
-  "name": "react-window-scroll-indicator",
+  "name": "react-scroll-sensor",
   "version": "0.0.1",
   "description": "",
   "main": "lib/index.js",
@@ -12,9 +12,9 @@
     "build:commonjs": "cross-env NODE_ENV=cjs rollup -c -o lib/index.js",
     "build:es": "cross-env BABEL_ENV=es NODE_ENV=es rollup -c -o es/index.js",
     "build:umd":
-      "cross-env BABEL_ENV=es NODE_ENV=development rollup -c -o dist/react-window-scroll-indicator.js",
+      "cross-env BABEL_ENV=es NODE_ENV=development rollup -c -o dist/react-scroll-sensor.js",
     "build:umd:min":
-      "cross-env BABEL_ENV=es NODE_ENV=production rollup -c -o dist/react-window-scroll-indicator.min.js",
+      "cross-env BABEL_ENV=es NODE_ENV=production rollup -c -o dist/react-scroll-sensor.min.js",
     "build":
       "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
     "clean": "rimraf lib dist es",
@@ -35,10 +35,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/imbhargav5/react-window-scroll-indicator.git"
+    "url": "git+https://github.com/imbhargav5/react-scroll-sensor.git"
   },
   "keywords": [
-    "react-window-scroll-indicator",
+    "react-scroll-sensor",
     "state-management",
     "finite-state-machine"
   ],
@@ -46,10 +46,9 @@
     "Bhargav Ponnapalli <bhargavponnapalli.5@gmail.com> (https://github.com/imbhargav5)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/imbhargav5/react-window-scroll-indicator/issues"
+    "url": "https://github.com/imbhargav5/react-scroll-sensor/issues"
   },
-  "homepage":
-    "https://github.com/imbhargav5/react-window-scroll-indicator#readme",
+  "homepage": "https://github.com/imbhargav5/react-scroll-sensor#readme",
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
@@ -86,7 +85,7 @@
     "react": ">=16.0.0",
     "react-dom": ">=16.0.0"
   },
-  "npmName": "react-window-scroll-indicator",
+  "npmName": "react-scroll-sensor",
   "npmFileMap": [
     {
       "basePath": "/dist/",

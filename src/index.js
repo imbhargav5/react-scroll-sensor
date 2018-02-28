@@ -2,7 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default class ScrollIndicator extends React.Component {
+export default class ScrollSensor extends React.Component {
   static propTypes = {
     children: PropTypes.func.isRequired
   };
@@ -35,7 +35,7 @@ export default class ScrollIndicator extends React.Component {
   }
   render() {
     if (typeof this.props.children !== "function") {
-      throw new Error("Expected ScrollIndicator child to be a function");
+      throw new Error("Expected ScrollSensor child to be a function");
     }
     return this.props.children(
       this.state.scrollX,

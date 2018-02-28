@@ -13,7 +13,7 @@ const mountScrollIndicator = renderFn => {
   return mount(<ScrollIndicator>{render}</ScrollIndicator>);
 };
 
-describe("react-window-scroll-indicator", () => {
+describe("react-scroll-sensor", () => {
   it("exports a React component", () => {
     expect(typeof ScrollIndicator).toBe("function");
   });
