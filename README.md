@@ -18,7 +18,7 @@ Get the scroll positions of the window object in your component
 You can use this to build a sticky div which moves around with the cursor.
 
 ```javascript
-import ScrollIndicator from "react-scroll-indicator";
+import ScrollIndicator from "react-scroll-sensor";
 
 <ScrollIndicator throttleDelay={300}>
   {(scrollX, scrollY) => (
